@@ -50,8 +50,8 @@ h2 {
   box-shadow: 0px 0px 20px 10px #a3b4d5;
   border: 1px solid rgb(255, 255, 201);
   border-radius: 10rem;
-  width: 5px;
-  height: 5px;
+  width: 2px;
+  height: 2px;
   animation-name: clignot;
   animation-duration: 10s;
   animation-iteration-count: infinite;
@@ -59,7 +59,7 @@ h2 {
 
 @keyframes clignot {
   100% {
-    transform: translateY(1200px);
+    transform: translatey(-300px);
   }
 }
 </style>
