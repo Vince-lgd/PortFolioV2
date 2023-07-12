@@ -1,7 +1,7 @@
 <template>
   <div class="body">
     <div class="menu">
-      <router-link to="/home">
+      <router-link to="/">
         <div class="but"><p>Home</p></div>
       </router-link>
       <router-link to="/profil">
@@ -23,26 +23,34 @@
 
 <style scoped>
 .body {
-  display: flex;
   justify-content: center;
+  align-items: center;
   text-decoration: none;
 }
 .menu {
   display: flex;
+  justify-content: center;
   gap: 5rem;
   text-decoration: none;
 }
 .but {
   display: flex;
   justify-content: center;
-  border: solid 1px red;
+  text-align: center;
+  border: solid 1px #a3b4d5;
   width: 8rem;
   border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 20px 10px #a3b4d5;
+}
+.but:hover {
+  transform: scale(1.125);
+  color: #6e93bd;
 }
 p {
   text-decoration: none;
-  color: black;
+  color: aliceblue;
 }
 </style>
