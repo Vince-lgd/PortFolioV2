@@ -50,8 +50,8 @@
   box-shadow: 0px 0px 20px 10px #a3b4d5;
   border: 1px solid rgb(255, 255, 201);
   border-radius: 10rem;
-  width: 2px;
-  height: 2px;
+  width: 3px;
+  height: 3px;
   animation-name: clignot;
   animation-duration: 10s;
   animation-iteration-count: infinite;
@@ -62,8 +62,8 @@
   box-shadow: 0px 0px 20px 10px salmon;
   border: 1px solid rgb(255, 255, 201);
   border-radius: 10rem;
-  width: 2px;
-  height: 2px;
+  width: 3px;
+  height: 3px;
   animation-name: clignotSalmon;
   animation-duration: 10s;
   animation-iteration-count: infinite;
