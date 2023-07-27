@@ -12,6 +12,7 @@ import NavBar from "./components/NavBar.vue";
 
 <style>
 body {
-  background-color: rgb(126, 121, 105);
+  background-color: rgb(0, 0, 0);
+  /* overflow: hidden; */
 }
 </style>

@@ -6,80 +6,12 @@
     <p>
       <span> Développeur full-stack </span>
     </p>
-    <div>
-      <div class="starsBlue">
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-      </div>
-      <div class="starsSalmon">
-        <div class="starSalmon"></div>
-        <div class="starSalmon"></div>
-        <div class="starSalmon"></div>
-        <div class="starSalmon"></div>
-        <div class="starSalmon"></div>
-        <div class="starSalmon"></div>
-        <div class="starSalmon"></div>
-        <div class="starSalmon"></div>
-      </div>
-    </div>
   </div>
 </template>
 
 <script setup></script>
 
 <style scoped>
-.starsBlue {
-  display: flex;
-  justify-content: center;
-  gap: 9rem;
-}
-.starsSalmon {
-  display: flex;
-  justify-content: center;
-  gap: 9rem;
-}
-.star {
-  background-color: rgb(255, 255, 201);
-  backdrop-filter: blur(10px);
-  box-shadow: 0px 0px 20px 10px #a3b4d5;
-  border: 1px solid rgb(255, 255, 201);
-  border-radius: 10rem;
-  width: 3px;
-  height: 3px;
-  animation-name: clignot;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-}
-.starSalmon {
-  background-color: rgb(255, 255, 201);
-  backdrop-filter: blur(10px);
-  box-shadow: 0px 0px 20px 10px salmon;
-  border: 1px solid rgb(255, 255, 201);
-  border-radius: 10rem;
-  width: 3px;
-  height: 3px;
-  animation-name: clignotSalmon;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes clignot {
-  100% {
-    transform: translatey(-300px);
-  }
-}
-@keyframes clignotSalmon {
-  100% {
-    transform: translatey(300px);
-  }
-}
-
 *,
 ::before,
 ::after {
@@ -96,10 +28,11 @@ body {
   max-width: 1600px;
   margin: 0 auto;
   padding: 100px 20px 0;
+  margin-top: 2rem;
 }
 p {
   text-transform: uppercase;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-weight: 900;
   color: transparent;
   font-size: 0px;
@@ -128,7 +61,7 @@ p:nth-child(2) {
   animation: txt-appearance 0s 1.25s forwards;
 }
 p:nth-child(1) span::after {
-  background: salmon;
+  background: #ffae00;
   animation: slide-in 0.75s ease-out forwards,
     slide-out 0.75s 1s ease-out forwards;
 }
@@ -150,7 +83,7 @@ p:nth-child(2) span::after {
 }
 @keyframes txt-appearance {
   100% {
-    color: #222;
+    color: rgb(255, 255, 255);
   }
 }
 </style>
