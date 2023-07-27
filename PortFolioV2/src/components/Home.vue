@@ -28,7 +28,7 @@ body {
   max-width: 1600px;
   margin: 0 auto;
   padding: 100px 20px 0;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 p {
   text-transform: uppercase;
