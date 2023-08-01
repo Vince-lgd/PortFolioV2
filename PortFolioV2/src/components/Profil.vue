@@ -51,6 +51,9 @@ onMounted(() => {
   display: flex;
   justify-content: space-between;
 }
+h1 {
+  color: aliceblue;
+}
 p {
   font-size: 1.5rem;
   width: 18rem;
@@ -82,41 +85,3 @@ img {
   background-color: #ffae00;
 }
 </style>
-
-<!-- 
-<template>
-  <div>
-    <div ref="elementToAnimate" class="box"></div>
-  </div>
-</template>
-
-<script>
-import { gsap } from "gsap";
-import { ref, onMounted } from "vue";
-
-export default {
-  setup() {
-
-    const animateElement = () => {
-      gsap.to(elementToAnimate.value, { x: 100, duration: 1 });
-    };
-
-    onMounted(() => {
-      // Vous pouvez également effectuer des actions lors du montage du composant ici.
-    });
-
-    return {
-      elementToAnimate,
-      animateElement,
-    };
-  },
-};
-</script>
-
-<style>
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-}
-</style> -->

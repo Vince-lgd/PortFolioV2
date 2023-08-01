@@ -1,5 +1,7 @@
 <template>
   <div>
+    <div class="custom-cursor" ref="cursor"></div>
+
     <div>
       <NavBar />
     </div>
@@ -8,11 +10,53 @@
 
 <script setup>
 import NavBar from "./components/NavBar.vue";
+
+import { gsap } from "gsap";
+import { ref, onMounted } from "vue";
+
+const cursor = ref(null);
+
+const followCursor = (event) => {
+  gsap.to(cursor.value, {
+    left: event.clientX,
+    top: event.clientY,
+    duration: 0.4,
+  });
+  if (event.target.classList == "link") {
+    gsap.to(cursor.value, {
+      width: 80,
+      height: 80,
+      backgroundColor: "gray",
+
+      opacity: "0.8",
+    });
+  } else {
+    gsap.to(cursor.value, {
+      width: 20,
+      height: 20,
+      backgroundColor: "#ffae00",
+    });
+  }
+};
+
+onMounted(() => {
+  window.addEventListener("mousemove", followCursor);
+});
 </script>
 
 <style>
 body {
   background-color: rgb(0, 0, 0);
-  /* overflow: hidden; */
+}
+
+.custom-cursor {
+  width: 10px;
+  height: 10px;
+  z-index: -1;
+  background: #ffae00;
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
 }
 </style>

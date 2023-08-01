@@ -1,15 +1,18 @@
 <template>
   <div class="container">
-    <p>
+    <!-- <p>
       <span> Lagarde Vincent </span>
-    </p>
+    </p> -->
     <p>
       <span> Développeur full-stack </span>
     </p>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { gsap } from "gsap";
+import { ref, onMounted } from "vue";
+</script>
 
 <style scoped>
 *,

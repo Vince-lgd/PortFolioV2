@@ -4,8 +4,10 @@
       <h1>Mes Projets</h1>
     </div>
     <div class="project" v-for="(project, index) in projects" :key="index">
-      <img :src="project.image" alt="" />
-      <a target="_blank" :href="project.url">{{ project.name }}</a>
+      <div class="pro">
+        <img :src="project.image" alt="" />
+        <a target="_blank" :href="project.url">{{ project.name }}</a>
+      </div>
     </div>
   </div>
 </template>
@@ -80,8 +82,14 @@ img {
 .project {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   margin-top: 2rem;
+}
+
+.pro {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 </style>
