@@ -27,7 +27,6 @@ const followCursor = (event) => {
       width: 80,
       height: 80,
       backgroundColor: "gray",
-
       opacity: "0.8",
     });
   } else {
@@ -47,6 +46,10 @@ onMounted(() => {
 <style>
 body {
   background-color: rgb(0, 0, 0);
+}
+h2 {
+  color: aliceblue;
+  font-size: 0.75rem;
 }
 
 .custom-cursor {
