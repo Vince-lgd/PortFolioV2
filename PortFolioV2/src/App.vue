@@ -1,16 +1,22 @@
 <template>
   <div>
     <div class="custom-cursor" ref="cursor"></div>
-
     <div>
       <NavBar />
+    </div>
+    <div class="projects">
+      <Projects />
+    </div>
+    <div class="profil">
+      <Profil />
     </div>
   </div>
 </template>
 
 <script setup>
 import NavBar from "./components/NavBar.vue";
-
+import Projects from "./components/Projects.vue";
+import Profil from "./components/Profil.vue";
 import { gsap } from "gsap";
 import { ref, onMounted } from "vue";
 
@@ -33,7 +39,7 @@ const followCursor = (event) => {
     gsap.to(cursor.value, {
       width: 20,
       height: 20,
-      backgroundColor: "#ffae00",
+      backgroundColor: "#00ffee",
     });
   }
 };
@@ -47,10 +53,6 @@ onMounted(() => {
 body {
   background-color: rgb(0, 0, 0);
 }
-h2 {
-  color: aliceblue;
-  font-size: 0.75rem;
-}
 
 .custom-cursor {
   width: 10px;
@@ -61,5 +63,11 @@ h2 {
   position: fixed;
   transform: translate(-50%, -50%);
   pointer-events: none;
+}
+.projects {
+  margin-top: 10rem;
+}
+.profil {
+  margin-top: 20rem;
 }
 </style>

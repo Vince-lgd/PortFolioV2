@@ -1,17 +1,68 @@
 <template>
-  <div class="container">
-    <!-- <p>
-      <span> Lagarde Vincent </span>
-    </p> -->
-    <p>
-      <span> Développeur full-stack </span>
-    </p>
+  <div>
+    <div class="container">
+      <p>
+        <span> Développeur full-stack </span>
+      </p>
+    </div>
+    <div ref="text" class="text">
+      <h1>Scroll Down</h1>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="120"
+        height="120"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          d="M3.75 5.75L8 10.25l4.25-4.5"
+        />
+      </svg>
+    </div>
+    <div class="links">
+      <h3>Réseaux Sociaux</h3>
+      <div class="link">
+        <a
+          class="link"
+          target="_blank"
+          href="https://www.linkedin.com/in/vincent-lagarde-b61322234/"
+          >Linkedin</a
+        >
+        <a
+          class="link"
+          target="_blank"
+          href="https://github.com/Vince-lgd?tab=repositories"
+          >GitHub</a
+        >
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup>
 import { gsap } from "gsap";
 import { ref, onMounted } from "vue";
+
+const text = ref(null);
+
+const animatexte = () => {
+  gsap.set(text.value, { y: -10 });
+  gsap.to(text.value, {
+    y: 10,
+    opacity: 1,
+    repeat: -1,
+    yoyo: true,
+    duration: 1.25,
+  });
+};
+
+onMounted(() => {
+  animatexte();
+});
 </script>
 
 <style scoped>
@@ -26,13 +77,47 @@ html,
 body {
   height: 100%;
 }
+h3 {
+  color: aliceblue;
+}
+svg {
+  color: aliceblue;
+}
+h1 {
+  color: aliceblue;
+}
+a {
+  font-size: 1rem;
+  color: aliceblue;
+  gap: 4rem;
+}
 
 .container {
+  position: relative;
   max-width: 1600px;
   margin: 0 auto;
   padding: 100px 20px 0;
   margin-top: 4rem;
 }
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 2rem;
+}
+.link {
+  display: flex;
+  gap: 1rem;
+}
+
 p {
   text-transform: uppercase;
   color: rgb(255, 255, 255);
@@ -64,7 +149,7 @@ p:nth-child(2) {
   animation: txt-appearance 0s 1.25s forwards;
 }
 p:nth-child(1) span::after {
-  background: #ffae00;
+  background: #00ffee;
   animation: slide-in 0.75s ease-out forwards,
     slide-out 0.75s 1s ease-out forwards;
 }

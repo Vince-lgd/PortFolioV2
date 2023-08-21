@@ -22,20 +22,6 @@
             >lagardevincent64@gmail.com</a
           >
         </div>
-        <div class="links">
-          <a
-            class="link"
-            target="_blank"
-            href="https://www.linkedin.com/in/vincent-lagarde-b61322234/"
-            >Linkedin</a
-          >
-          <a
-            class="link"
-            target="_blank"
-            href="https://github.com/Vince-lgd?tab=repositories"
-            >GitHub</a
-          >
-        </div>
       </div>
     </div>
   </div>
@@ -53,8 +39,8 @@ const animateElement = (event) => {
   gsap.to(text2.value, { x: 120, duration: 1 });
   gsap.to(text3.value, { x: 250, duration: 1 });
   gsap.to(text3.value, { x: 350, duration: 2 });
-  gsap.to(text3.value, { backgroundColor: "#ffae00", duration: 2 });
-  gsap.to(changeColor.value, { color: "aliceblue", duration: 1 });
+  gsap.to(text3.value, { backgroundColor: "#00ffee", duration: 2 });
+  gsap.to(changeColor.value, { color: "black", duration: 1 });
 };
 
 onMounted(() => {
@@ -76,11 +62,6 @@ p {
   font-size: 1.5rem;
   color: aliceblue;
 }
-a {
-  font-size: 1rem;
-  color: aliceblue;
-  gap: 4rem;
-}
 
 img {
   margin-top: 5rem;
@@ -101,20 +82,20 @@ img {
   flex-direction: column;
   align-items: center;
   color: aliceblue;
-  border: solid 1px #ffae00;
+  border: solid 1px #00ffee;
   border-radius: 50px;
   width: 50%;
   margin-top: 4rem;
 }
 
 .text3:hover {
-  background-color: #ffae00;
+  background-color: #00ffee;
   color: aliceblue;
 }
 
 .line {
   display: flex;
-  border: solid 2px #ffae00;
+  border: solid 2px #00ffee;
   width: 40px;
 }
 .dispo {
@@ -125,11 +106,6 @@ img {
   color: rgb(151, 151, 151);
 }
 
-.links {
-  display: flex;
-  gap: 2rem;
-  margin-top: 5rem;
-}
 a:hover {
   text-decoration: underline;
   text-decoration-color: aliceblue;

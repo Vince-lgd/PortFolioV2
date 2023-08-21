@@ -3,7 +3,12 @@
     <div class="title">
       <h1>Mes Projets</h1>
     </div>
-    <div class="project" v-for="(project, index) in projects" :key="index">
+    <div
+      ref="box"
+      class="project"
+      v-for="(project, index) in projects"
+      :key="index"
+    >
       <div class="pro">
         <img :src="project.image" alt="" />
         <a target="_blank" :href="project.url">{{ project.name }}</a>
@@ -12,8 +17,8 @@
   </div>
 </template>
 <script setup>
-// import { gsap } from "gsap";
-import { ref } from "vue";
+import { gsap } from "gsap";
+import { onMounted, ref } from "vue";
 import wildStone from "../assets/wildStone.jpeg";
 import green from "../assets/imgGreen.jpg";
 import cv from "../assets/imgCv.png";
@@ -59,6 +64,12 @@ const projects = ref([
     image: portfolio,
   },
 ]);
+
+const drag = () => {};
+
+onMounted(() => {
+  drag();
+});
 </script>
 
 <style scoped>
@@ -81,8 +92,6 @@ img {
 }
 .project {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
   margin-top: 2rem;
 }

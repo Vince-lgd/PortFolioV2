@@ -7,9 +7,11 @@
           <h3>Lagarde</h3>
         </div>
       </router-link>
-      <div class="freelance">
+      <div ref="circle" class="freelance">
         <div ref="circle" class="circle"></div>
-        <h2>Disponible pour du travail en freelance</h2>
+        <a ref="changeColor" href="mailto:lagardevincent64@gmail.com">
+          <h2>Disponible pour du travail en freelance / CDI</h2>
+        </a>
       </div>
       <div ref="texte" class="but">
         <router-link to="/projects">
@@ -35,7 +37,14 @@ const circle = ref(null);
 const animateNavBar = () => {
   gsap.set(texte.value, { opacity: 0 });
   gsap.to(texte.value, { opacity: 1, duration: 1, delay: 1 });
-  // gsap.to(circle.value, { opacity: 0, duration: 0.5 });
+  gsap.set(circle.value, { y: -20, opacity: 0 });
+  gsap.to(circle.value, {
+    y: 20,
+    opacity: 1,
+    repeat: -1,
+    yoyo: true,
+    duration: 1.25,
+  });
 };
 
 onMounted(() => {
@@ -75,7 +84,7 @@ onMounted(() => {
   border: solid 1px aliceblue;
   border-radius: 20px;
   height: 2rem;
-  width: 20%;
+  width: 25%;
   gap: 5px;
 }
 
@@ -91,7 +100,7 @@ p {
 h2 {
   color: aliceblue;
   font-family: "Poppins", sans-serif;
-  font-size: 0.5rem;
+  font-size: 0.75rem;
 }
 h3 {
   color: aliceblue;
