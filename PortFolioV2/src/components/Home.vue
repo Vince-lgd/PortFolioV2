@@ -2,7 +2,7 @@
   <div>
     <div class="container">
       <p>
-        <span> Développeur full-stack </span>
+        <span> Développeur front-end </span>
       </p>
     </div>
     <div ref="text" class="text">
@@ -40,12 +40,20 @@
         >
       </div>
     </div>
+    <div class="projects">
+      <Projects />
+    </div>
+    <div class="profil">
+      <Profil />
+    </div>
   </div>
 </template>
 
 <script setup>
 import { gsap } from "gsap";
 import { ref, onMounted } from "vue";
+import Projects from "../components/Projects.vue";
+import Profil from "../components/Profil.vue";
 
 const text = ref(null);
 
@@ -116,6 +124,21 @@ a {
 .link {
   display: flex;
   gap: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+.projects {
+  margin-top: 10rem;
+}
+.profil {
+  margin-top: 20rem;
+}
+a:hover {
+  color: rgb(162, 162, 162);
+  height: 1px;
+  text-decoration: underline;
+  text-decoration-color: aliceblue;
+  text-decoration-thickness: 2px;
+  font-family: Playfair Display, serif !important;
 }
 
 p {

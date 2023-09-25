@@ -2,7 +2,7 @@
   <div>
     <div class="pres">
       <div class="text">
-        <h1>Développeur Full-Stack</h1>
+        <h1>Développeur Front-End</h1>
         <div class="line"></div>
         <p class="dispo">Ouvert aux opportunités professionelles</p>
         <div ref="text2" class="text2">
@@ -17,9 +17,8 @@
           </p>
         </div>
         <div ref="text3" class="text3">
-          <p class="contact">Contact :</p>
           <a ref="changeColor" href="mailto:lagardevincent64@gmail.com"
-            >lagardevincent64@gmail.com</a
+            >Envoyez-moi un email</a
           >
         </div>
       </div>
@@ -38,7 +37,7 @@ const changeColor = ref(null);
 const animateElement = (event) => {
   gsap.to(text2.value, { x: 120, duration: 1 });
   gsap.to(text3.value, { x: 250, duration: 1 });
-  gsap.to(text3.value, { x: 350, duration: 2 });
+  gsap.to(text3.value, { x: 400, duration: 2 });
   gsap.to(text3.value, { backgroundColor: "#00ffee", duration: 2 });
   gsap.to(changeColor.value, { color: "black", duration: 1 });
 };
@@ -79,13 +78,17 @@ img {
 }
 .text3 {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   color: aliceblue;
   border: solid 1px #00ffee;
   border-radius: 50px;
   width: 50%;
+  height: 10%;
   margin-top: 4rem;
+}
+a {
+  color: black;
 }
 
 .text3:hover {

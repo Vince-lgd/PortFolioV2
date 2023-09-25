@@ -4,19 +4,12 @@
     <div>
       <NavBar />
     </div>
-    <div class="projects">
-      <Projects />
-    </div>
-    <div class="profil">
-      <Profil />
-    </div>
   </div>
 </template>
 
 <script setup>
 import NavBar from "./components/NavBar.vue";
-import Projects from "./components/Projects.vue";
-import Profil from "./components/Profil.vue";
+
 import { gsap } from "gsap";
 import { ref, onMounted } from "vue";
 
@@ -58,16 +51,10 @@ body {
   width: 10px;
   height: 10px;
   z-index: -1;
-  background: #ffae00;
+  background: "#00ffee";
   border-radius: 50%;
   position: fixed;
   transform: translate(-50%, -50%);
   pointer-events: none;
-}
-.projects {
-  margin-top: 10rem;
-}
-.profil {
-  margin-top: 20rem;
 }
 </style>
