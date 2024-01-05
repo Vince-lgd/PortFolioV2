@@ -197,4 +197,23 @@ p:nth-child(2) span::after {
     color: rgb(255, 255, 255);
   }
 }
+
+@media all and (max-width: 430px) {
+  .text {
+    margin-top: 12rem;
+  }
+  .links {
+    margin-top: 5rem;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 10px;
+  }
+  p > span {
+    font-size: 3rem;
+  }
+}
 </style>

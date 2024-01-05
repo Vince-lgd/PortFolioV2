@@ -17,9 +17,11 @@
           </p>
         </div>
         <div ref="text3" class="text3">
-          <a ref="changeColor" href="mailto:lagardevincent64@gmail.com"
-            >Envoyez-moi un email</a
-          >
+          <div class="bull">
+            <a ref="changeColor" href="mailto:lagardevincent64@gmail.com"
+              >Envoyez-moi un email</a
+            >
+          </div>
         </div>
       </div>
     </div>
@@ -34,10 +36,10 @@ const text2 = ref(null);
 const text3 = ref(null);
 const changeColor = ref(null);
 
-const animateElement = (event) => {
-  gsap.to(text2.value, { x: 120, duration: 1 });
-  gsap.to(text3.value, { x: 250, duration: 1 });
-  gsap.to(text3.value, { x: 400, duration: 2 });
+const animateElement = () => {
+  // gsap.to(text2.value, { x: 120, duration: 1 });
+  // gsap.to(text3.value, { x: 250, duration: 1 });
+  // gsap.to(text3.value, { x: 400, duration: 2 });
   gsap.to(text3.value, { backgroundColor: "#00ffee", duration: 2 });
   gsap.to(changeColor.value, { color: "black", duration: 1 });
 };
@@ -81,12 +83,13 @@ img {
   justify-content: center;
   align-items: center;
   color: aliceblue;
-  border: solid 1px #00ffee;
+  border: solid 1px #103734;
   border-radius: 50px;
   width: 50%;
   height: 10%;
   margin-top: 4rem;
 }
+
 a {
   color: black;
 }
@@ -114,5 +117,29 @@ a:hover {
   text-decoration-color: aliceblue;
   text-decoration-thickness: 2px;
   font-family: Playfair Display, serif !important;
+}
+
+@media all and (max-width: 900px) {
+  .text3 {
+    width: 100%;
+    margin-top: 6rem;
+  }
+}
+@media all and (max-width: 430px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  .dispo {
+    font-size: 1.2rem;
+  }
+  .text2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 15rem;
+  }
+  p {
+    font-size: 1rem;
+  }
 }
 </style>

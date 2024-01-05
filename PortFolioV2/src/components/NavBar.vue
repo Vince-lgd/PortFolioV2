@@ -114,4 +114,43 @@ p:hover {
   text-decoration-thickness: 2px;
   font-family: Playfair Display, serif !important;
 }
+
+@media all and (max-width: 1000px) {
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    padding: 10px;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 0.5rem;
+  }
+}
+@media all and (max-width: 430px) {
+  .freelance {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 10px;
+  }
+  p {
+    font-size: 0.7rem;
+  }
+}
 </style>

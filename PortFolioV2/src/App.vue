@@ -9,7 +9,6 @@
 
 <script setup>
 import NavBar from "./components/NavBar.vue";
-
 import { gsap } from "gsap";
 import { ref, onMounted } from "vue";
 
