@@ -10,7 +10,7 @@
       <div ref="circle" class="freelance">
         <div ref="circle" class="circle"></div>
         <a ref="changeColor" href="mailto:lagardevincent64@gmail.com">
-          <h2>Disponible pour du travail en freelance / CDI</h2>
+          <h2>Disponible pour un poste en freelance / CDI</h2>
         </a>
       </div>
       <div ref="texte" class="but">

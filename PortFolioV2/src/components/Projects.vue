@@ -135,4 +135,36 @@ h1 {
 p {
   color: aliceblue;
 }
+
+@media all and (max-width: 430px) {
+  .project span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+    user-select: none;
+  }
+  .project span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 72deg)) translateZ(100px);
+    -webkit-box-reflect: below 1px
+      linear-gradient(transparent, transparent, #0002);
+  }
+  a {
+    text-align: center;
+    position: absolute;
+    margin-top: 28vh;
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+    font-size: 5px;
+  }
+}
 </style>
