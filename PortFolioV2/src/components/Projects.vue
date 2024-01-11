@@ -136,6 +136,105 @@ p {
   color: aliceblue;
 }
 
+@media all and (max-width: 1000px) {
+  .project span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+    user-select: none;
+  }
+  .project span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 72deg)) translateZ(300px);
+    -webkit-box-reflect: below 1px
+      linear-gradient(transparent, transparent, #0002);
+  }
+  a {
+    text-align: center;
+    position: absolute;
+    margin-top: 28vh;
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    width: 8rem;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .project span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+    user-select: none;
+  }
+  .project span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 72deg)) translateZ(200px);
+    -webkit-box-reflect: below 1px
+      linear-gradient(transparent, transparent, #0002);
+  }
+  a {
+    text-align: center;
+    position: absolute;
+    margin-top: 28vh;
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    width: 8rem;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .project span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+    user-select: none;
+  }
+  .project span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 72deg)) translateZ(150px);
+    -webkit-box-reflect: below 1px
+      linear-gradient(transparent, transparent, #0002);
+  }
+  a {
+    text-align: center;
+    position: absolute;
+    margin-top: 28vh;
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    width: 8rem;
+  }
+}
+
 @media all and (max-width: 430px) {
   .project span img {
     position: absolute;
@@ -164,7 +263,41 @@ p {
     margin-top: 28vh;
     color: aliceblue;
     font-family: "Poppins", sans-serif;
-    font-size: 5px;
+    font-size: 10px;
+    width: 8rem;
+  }
+}
+
+@media all and (max-width: 422px) {
+  .project span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    user-select: none;
+  }
+  .project span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 72deg)) translateZ(80px);
+    -webkit-box-reflect: below 1px
+      linear-gradient(transparent, transparent, #0002);
+  }
+  a {
+    text-align: center;
+    position: absolute;
+    margin-top: 20vh;
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    width: 5rem;
   }
 }
 </style>

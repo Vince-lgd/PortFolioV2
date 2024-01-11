@@ -138,6 +138,22 @@ p:hover {
     font-size: 0.5rem;
   }
 }
+@media all and (max-width: 1000px) {
+  .freelance {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 10px;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
 @media all and (max-width: 430px) {
   .freelance {
     display: none;
@@ -151,6 +167,21 @@ p:hover {
   }
   p {
     font-size: 0.7rem;
+  }
+}
+@media all and (max-width: 422px) {
+  .freelance {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 10px;
+  }
+  p {
+    font-size: 0.5rem;
   }
 }
 </style>

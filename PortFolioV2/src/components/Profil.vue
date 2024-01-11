@@ -2,7 +2,7 @@
   <div>
     <div class="pres">
       <div class="text">
-        <h1>Développeur Front-End</h1>
+        <h1>Vincent Lagarde</h1>
         <div class="line"></div>
         <p class="dispo">Ouvert aux opportunités professionelles</p>
         <div ref="text2" class="text2">
