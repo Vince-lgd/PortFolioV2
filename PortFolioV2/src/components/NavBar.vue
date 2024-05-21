@@ -10,7 +10,7 @@
       <div ref="circle" class="freelance">
         <div ref="circle" class="circle"></div>
         <a ref="changeColor" href="mailto:lagardevincent64@gmail.com">
-          <h2>Recherche une entreprise pour une alternance</h2>
+          <h2>Portfolio</h2>
         </a>
       </div>
       <div ref="texte" class="but">
@@ -84,7 +84,7 @@ onMounted(() => {
   border: solid 1px aliceblue;
   border-radius: 20px;
   height: 2rem;
-  width: 25%;
+  width: 10%;
   gap: 5px;
 }
 
