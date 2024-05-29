@@ -40,7 +40,7 @@ const animateElement = () => {
   // gsap.to(text2.value, { x: 120, duration: 1 });
   // gsap.to(text3.value, { x: 250, duration: 1 });
   // gsap.to(text3.value, { x: 400, duration: 2 });
-  gsap.to(text3.value, { backgroundColor: "#00ffee", duration: 2 });
+  gsap.to(text3.value, { backgroundColor: "#57eb00", duration: 2 });
   gsap.to(changeColor.value, { color: "black", duration: 1 });
 };
 
@@ -95,13 +95,13 @@ a {
 }
 
 .text3:hover {
-  background-color: #00ffee;
+  background-color: #57eb00;
   color: aliceblue;
 }
 
 .line {
   display: flex;
-  border: solid 2px #00ffee;
+  border: solid 2px #57eb00;
   width: 40px;
 }
 .dispo {
