@@ -31,7 +31,7 @@ const followCursor = (event) => {
     gsap.to(cursor.value, {
       width: 20,
       height: 20,
-      backgroundColor: "#00ffee",
+      backgroundColor: "#57eb00",
     });
   }
 };
