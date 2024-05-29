@@ -84,7 +84,9 @@ onMounted(() => {
   border: solid 1px aliceblue;
   border-radius: 20px;
   height: 2rem;
-  width: 15%;
+
+  width: 10%;
+
   gap: 5px;
 }
 
