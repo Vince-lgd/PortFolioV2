@@ -172,7 +172,7 @@ p:nth-child(2) {
   animation: txt-appearance 0s 1.25s forwards;
 }
 p:nth-child(1) span::after {
-  background: #00ffee;
+  background: #57eb00;
   animation: slide-in 0.75s ease-out forwards,
     slide-out 0.75s 1s ease-out forwards;
 }
