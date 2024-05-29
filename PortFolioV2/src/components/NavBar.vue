@@ -10,10 +10,7 @@
       <div ref="circle" class="freelance">
         <div ref="circle" class="circle"></div>
         <a ref="changeColor" href="mailto:lagardevincent64@gmail.com">
-
-
           <h2>Disponible</h2>
-
         </a>
       </div>
       <div ref="texte" class="but">
@@ -89,7 +86,6 @@ onMounted(() => {
   height: 2rem;
 
   width: 10%;
-
 
   gap: 5px;
 }
