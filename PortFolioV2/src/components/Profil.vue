@@ -4,7 +4,7 @@
       <div class="text">
         <h1>Vincent Lagarde</h1>
         <div class="line"></div>
-        <p class="dispo">Ouvert aux opportunités professionelles</p>
+        <p class="dispo">Développeur front-end</p>
         <div ref="text2" class="text2">
           <p>
             J'ai réalisé deux formations, une première de trois mois orienté
@@ -14,6 +14,10 @@
             Une deuxième formation cette fois-ci en alternance d'une durée d'un
             an, afin de préparer le titre de Concepteur développeur
             d'application
+          </p>
+          <p>
+            Septembre 2024, j'intégre l'ESSIEA à Dax pour devenir Expert en
+            ingénierie du développement d’applications en alternance.
           </p>
         </div>
         <div ref="text3" class="text3">
@@ -123,6 +127,7 @@ a:hover {
   .text3 {
     width: 100%;
     margin-top: 6rem;
+    margin-bottom: 2rem;
   }
 }
 @media all and (max-width: 430px) {

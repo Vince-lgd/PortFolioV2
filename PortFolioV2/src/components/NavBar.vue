@@ -7,12 +7,12 @@
           <h3>Lagarde</h3>
         </div>
       </router-link>
-      <div ref="circle" class="freelance">
+      <!-- <div ref="circle" class="freelance">
         <div ref="circle" class="circle"></div>
         <a ref="changeColor" href="mailto:lagardevincent64@gmail.com">
           <h2>Disponible</h2>
         </a>
-      </div>
+      </div> -->
       <div ref="texte" class="but">
         <router-link to="/projects">
           <div class="but"><p class="link">Projets</p></div>
