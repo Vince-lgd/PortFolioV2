@@ -4,7 +4,7 @@
       <div class="text">
         <h1>Vincent Lagarde</h1>
         <div class="line"></div>
-        <p class="dispo">Développeur front-end</p>
+        <p class="dispo">Développeur full-stack</p>
         <div ref="text2" class="text2">
           <p>
             J'ai réalisé deux formations, une première de trois mois orienté
@@ -16,14 +16,14 @@
             d'application
           </p>
           <p>
-            Septembre 2024, j'intégre l'ESSIEA à Dax pour devenir Expert en
+            Septembre 2024, j'intégre l'ESIEA à Agen pour devenir Expert en
             ingénierie du développement d’applications en alternance.
           </p>
         </div>
         <div ref="text3" class="text3">
           <div class="bull">
             <a ref="changeColor" href="mailto:lagardevincent64@gmail.com"
-              >Envoyez-moi un email</a
+              >Me contacter</a
             >
           </div>
         </div>

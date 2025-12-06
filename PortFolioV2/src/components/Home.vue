@@ -2,7 +2,7 @@
   <div>
     <div class="container">
       <p>
-        <span> Développeur front-end </span>
+        <span> Développeur Full-Stack </span>
       </p>
     </div>
     <div ref="text" class="text">
